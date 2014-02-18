@@ -1,1 +1,0 @@
-<#assign ctx="${springMacroRequestContext.contextPath}">
