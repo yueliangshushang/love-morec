@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.love.morec.resourcebean">
+
+<resultMap type="ResourceBean" id="recycleResult">
+	<id property="id" column="id"/>
+	<result property="name" column="name"/>
+	<result property="path" column="physical_url"/>
+	<result property="lastModified" column="time"/>
+</resultMap>
+
+<sql id="commonSelect">
+	select self.* from cms_recycle self
+</sql>
+
+<insert id="save" keyProperty="id" useGeneratedKeys="true" >
+	insert into cms_recycle(name,physical_url,time)
+				values(#{name},#{path},#{lastModified})
+</insert>
+<select id="queryPage" resultMap="recycleResult">
+	<include refid="commonSelect"/>
+</select>
+<select id="get" resultMap="recycleResult">
+	<include refid="commonSelect"/>
+	where id=#{id}
+</select>
+<delete id="delete" >
+	delete from cms_recycle where id=#{id}
+</delete>
+
+</mapper>

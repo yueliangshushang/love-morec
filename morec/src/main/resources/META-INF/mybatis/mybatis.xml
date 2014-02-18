@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.love.morec.domain.channel.Channel"
+			alias="Channel" />
+		<typeAlias type="com.love.morec.domain.template.Template"
+			alias="Template" />
+		<typeAlias type="com.love.morec.domain.site.Site"
+			alias="Site" />
+		<!-- <typeAlias type="com.love.morec.domain.taobao.TaobaoCrawlTask"
+			alias="TaobaoCrawlTask" /> -->
+		<typeAlias type="com.love.morec.domain.resource.ResourceBean"
+			alias="ResourceBean" />
+		<typeAlias type="com.love.morec.domain.log.Log" 
+		    alias="Log"/>
+        <typeAlias type="com.love.morec.domain.attribute.Attribute" 
+			alias="Attribute"/>
+			<typeAlias type="com.love.morec.domain.category.Category" 
+			alias="Category"/>
+	</typeAliases>
+	
+	<plugins>
+		<plugin interceptor="com.loveme.core.orm.mybatis.MybatisPagePlugin">
+			<property name="dialect" value="com.loveme.core.orm.dialect.impl.MySQLDialect" />
+		</plugin>
+	</plugins>
+</configuration>

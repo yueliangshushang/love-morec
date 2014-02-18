@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, button{padding:0;margin:0;}
+fieldset, img{border:0;}
+input, label, select, option, textarea, button, fieldset, legend{font:12px/18px  Arial, Simsun, Helvetica, sans-serif;}
+table{border-collapse:collapse;border-spacing:0;font:12px/18px Arial, Simsun, Helvetica, sans-serif;}
+ul{list-style:none;}
+body{background-color:#FFFFFF;font:12px/18px  Arial, Simsun, Helvetica, sans-serif;color:#616161;text-align:center;}
+del{ font-family:simsun;}
+/* 默认链接 */
+a:link, a:visited {text-decoration:none;color:#555;}
+a:hover {text-decoration:underline;color:#D4105A;}
+/* 功能性质的链接 */
+.todo_link a:link,.todo_link a:visited {text-decoration:none;color:#085C9B;}
+.todo_link a:hover {color:#D4105A;}
+
+/* 公用_s */
+.hot{ color:#d80000;}
+.strong{ color:#d80000;}
+.nor{ color:#ababab;}
+.crumbs{ margin-bottom:10px;font-family:Simsun; clear:both;}
+.crumbs a:link,.crumbs a:visited{text-decoration:none;color:#085C9B;}
+.crumbs a:hover{text-decoration:underline;color:#B80000;}
+.co_red {color:red;}
+.hide {display:none;}
+/* 清浮动_S */
+.cf { zoom:1; }
+.cf:after { clear:both; display:block; visibility:hidden; content:""; height:0; line-height:0; }
+
+/* layout */
+.main{width:985px; margin:0 auto; text-align:left; text-align:left; z-index:10}
+.main .i_sidebar { float:left }
+.main .i_content { float:right }
+.main .i_content .i_col1 { float:left }
+.main .i_content .i_col2 { float:right }
+.main .i_content .i_col3 { clear:both; padding-top:10px; }
+
+/* 清浮动_s */
+.main {zoom:1;}
+.main:after { clear:both; display:block; visibility:hidden; content:""; height:0; line-height:0;}
+
+
+.layer_jump_city .layer_global_title h3 span{ font-weight:normal;}
+.layer_jump_city .layer_global_cont .layer_global_mod .icon_msg4{ left:0px;}
+.layer_jump_city .layer_global_main .layer_global_cont { padding-bottom:15px;}
+.layer_jump_city .layer_global_cont .layer_global_mod{ padding:0 0 0 66px;}
+.layer_jump_city .layer_global_cont .bold{ font-weight:bold;}
+.layer_jump_city .good_list{}
+.layer_jump_city .good_list li{ padding-left:8px; line-height:18px;}
+.layer_jump_city .good_list li .bull{ float:left; margin-left:-8px;}
+.layer_jump_city .wrap_btn .btn_common{ font-weight:bold; margin-left:15px;}
+
+
+/* 1280以上的宽屏样式 */
+.more3c_1280 .main {width:1225px;}
+
+/* 整个页面左右hang有5px留白 */
+.main {padding-left:5px;padding-right:5px;}
+
+/* 顶部广告 */
+.i_wrap_tooolbar .top_banner{}
+.i_wrap_tooolbar .top_banner a{margin:0 auto; display:block; width:985px;height:100%;background-repeat:no-repeat;background-position:0px 0px;}
+.more3c_1280 .i_wrap_tooolbar .top_banner a{width:1225px;}
